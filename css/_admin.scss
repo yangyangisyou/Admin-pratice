@@ -1,8 +1,12 @@
+
+span {
+    cursor: pointer;
+}
 .sider {
     position: fixed;
-    width: 296px;
+    width: 232px;
     height: 100%;
-    background-color: #EDF4EE;
+    background-color: $green-100;
     padding: 32px;
     .site-name {
         font-size: 24px;
@@ -11,11 +15,137 @@
     .page-list {
         margin-top: 32px;
         .page-element {
+            display: flex;
+            align-items: center;
             font-size: 16px;
             font-weight: bold;
+            cursor: pointer;
+            span + span {
+                margin-left: 16px;
+            }
         }
         .page-element + .page-element {
             margin-top: 29px;
         }
     }
+    .user {
+        position: fixed;
+        bottom: 32px;
+    }
+}
+
+.layout {
+    margin-left: 296px;
+    padding: 32px;
+    .nav {
+        display: flex;
+        align-items: center;
+        .page-name {
+            font-size: 32px;
+        }
+        .add-admin {
+            display: flex;
+            align-items: center;
+            margin-left: 47px;
+            cursor: pointer;
+            span + span {
+                margin-left: 8px;
+            }
+        }
+        .nav-list {
+            position: fixed;
+            right: 32px;
+            .nav-element {
+                display: inline-block;
+            }
+            .nav-element + .nav-element {
+                margin-left: 24px;
+            }
+            // display: flex;
+            // justify-content: flex-end;
+            // align-items: center;
+            // // margin-left: 582px;            
+        }
+    }
+    .admin-list {
+        margin-top: 48px;
+        width: 100%;
+        border-collapse: collapse;
+        thead {
+            border-bottom: 1px solid black;
+        }
+        th {
+            font-weight: bold;
+            text-align: left;
+        }
+        tr {
+            line-height: 23px;
+            text-align: left;
+        }
+        td {
+            line-height: 51.2px;
+        }
+        tr + tr {
+            border-top: 1px solid $green-200;
+        }
+        span + span {
+            margin-left: 25px;
+        }
+        .id {
+            max-width: 120px;
+        }
+        .name {
+            max-width: 150px;
+        }
+        .email {
+            max-width: 350px;
+        }
+        .verified {
+            max-width: 170px;
+        }
+    }
+
+    .paging {
+        display: flex;
+        align-items: center;
+        margin-top: 63px;
+        float: right;
+        .page-no {
+            border: black solid 1px;
+            padding: 6px 12.5px;
+            span, a {
+                line-height: 1.25;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    // table, td, th {
+    //     border: 1px solid black;
+    //   }
+      
+    //   table {
+    //     width: 100%;
+    //     border-collapse: collapse;
+    //   }
+
+    // .table {
+    //     margin-bottom: 63px;
+    //     thead th {
+    //       border-bottom: 1px solid $black;
+    //     }
+    //     th {
+    //       border-top: none;
+    //     }
+    //     td {
+    //       border-top: 1px solid $secondary;
+    //       padding: 16px 0 0;
+    //     }
+    //     tr:last-child td {
+    //       border-bottom: 1px solid $secondary;
+    //     }
+    //     .material-icons:hover {
+    //       color: $primary;
+    //     }
+    //   }
 }
