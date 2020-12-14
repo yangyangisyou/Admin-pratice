@@ -1,0 +1,35 @@
+
+.layout {
+    margin-left: 296px;
+    padding: 32px;
+    .nav {
+        display: flex;
+        align-items: center;
+        .page-name {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .add-admin {
+            display: flex;
+            align-items: center;
+            margin-left: 47px;
+            cursor: pointer;
+            span + span {
+                margin-left: 8px;
+            }
+        }
+        .add-admin:hover {
+            color: $grey;
+        }
+        .nav-list {
+            position: fixed;
+            right: 32px;
+            .nav-element {
+                display: inline-block;
+            }
+            .nav-element + .nav-element {
+                margin-left: 24px;
+            }        
+        }
+    }
+}

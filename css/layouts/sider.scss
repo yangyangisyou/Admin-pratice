@@ -1,0 +1,45 @@
+.sider {
+    position: fixed;
+    width: 232px;
+    height: 100%;
+    background-color: $green-100;
+    padding: 32px;
+    .page-list {
+        margin-top: 32px;
+        .page-element {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            span + span {
+                margin-left: 16px;
+            }
+        }
+        .page-element:hover {
+            color: $grey;
+        }
+        .page-element + .page-element {
+            margin-top: 29px;
+        }
+    }
+    .user {
+        position: fixed;
+        display: flex;
+        bottom: 32px;
+        .avator {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .user-info {
+            margin-left: 16px;
+            .username {
+                font-weight: bold;
+            }
+            p + p {
+                margin-top: 4px;
+            }
+        }
+    }
+}

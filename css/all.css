@@ -52,8 +52,90 @@ table {
   border-spacing: 0;
 }
 
-span {
+.material-icons {
   cursor: pointer;
+}
+
+.material-icons.green-300 {
+  color: #2A8356 !important;
+}
+
+.list {
+  margin-top: 48px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list thead {
+  border-bottom: 1px solid black;
+}
+
+.list th {
+  font-weight: bold;
+  text-align: left;
+}
+
+.list tr {
+  line-height: 23px;
+  text-align: left;
+}
+
+.list td {
+  line-height: 51.2px;
+}
+
+.list tr + tr {
+  border-top: 1px solid #CDDDCD;
+}
+
+.list span + span {
+  margin-left: 25px;
+}
+
+.list .id {
+  max-width: 120px;
+}
+
+.list .name {
+  max-width: 150px;
+}
+
+.list .email {
+  max-width: 350px;
+}
+
+.list .verified {
+  max-width: 170px;
+}
+
+.paging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 63px;
+  float: right;
+}
+
+.paging .page-no {
+  border: #2A8356 solid 1px;
+  padding: 6px 12.5px;
+}
+
+.paging .page-no span, .paging .page-no a {
+  line-height: 1.25;
+  text-decoration: none;
+  color: black;
+}
+
+.paging .active {
+  background-color: #2A8356;
+}
+
+.paging .active a {
+  color: white;
 }
 
 .sider {
@@ -62,11 +144,6 @@ span {
   height: 100%;
   background-color: #EDF4EE;
   padding: 32px;
-}
-
-.sider .site-name {
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .sider .page-list {
@@ -89,13 +166,38 @@ span {
   margin-left: 16px;
 }
 
+.sider .page-list .page-element:hover {
+  color: #0000009A;
+}
+
 .sider .page-list .page-element + .page-element {
   margin-top: 29px;
 }
 
 .sider .user {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   bottom: 32px;
+}
+
+.sider .user .avator {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.sider .user .user-info {
+  margin-left: 16px;
+}
+
+.sider .user .user-info .username {
+  font-weight: bold;
+}
+
+.sider .user .user-info p + p {
+  margin-top: 4px;
 }
 
 .layout {
@@ -114,6 +216,7 @@ span {
 
 .layout .nav .page-name {
   font-size: 32px;
+  font-weight: bold;
 }
 
 .layout .nav .add-admin {
@@ -131,6 +234,10 @@ span {
   margin-left: 8px;
 }
 
+.layout .nav .add-admin:hover {
+  color: #0000009A;
+}
+
 .layout .nav .nav-list {
   position: fixed;
   right: 32px;
@@ -142,75 +249,5 @@ span {
 
 .layout .nav .nav-list .nav-element + .nav-element {
   margin-left: 24px;
-}
-
-.layout .admin-list {
-  margin-top: 48px;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.layout .admin-list thead {
-  border-bottom: 1px solid black;
-}
-
-.layout .admin-list th {
-  font-weight: bold;
-  text-align: left;
-}
-
-.layout .admin-list tr {
-  line-height: 23px;
-  text-align: left;
-}
-
-.layout .admin-list td {
-  line-height: 51.2px;
-}
-
-.layout .admin-list tr + tr {
-  border-top: 1px solid #CDDDCD;
-}
-
-.layout .admin-list span + span {
-  margin-left: 25px;
-}
-
-.layout .admin-list .id {
-  max-width: 120px;
-}
-
-.layout .admin-list .name {
-  max-width: 150px;
-}
-
-.layout .admin-list .email {
-  max-width: 350px;
-}
-
-.layout .admin-list .verified {
-  max-width: 170px;
-}
-
-.layout .paging {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 63px;
-  float: right;
-}
-
-.layout .paging .page-no {
-  border: black solid 1px;
-  padding: 6px 12.5px;
-}
-
-.layout .paging .page-no span, .layout .paging .page-no a {
-  line-height: 1.25;
-  text-decoration: none;
-  color: black;
 }
 /*# sourceMappingURL=all.css.map */
